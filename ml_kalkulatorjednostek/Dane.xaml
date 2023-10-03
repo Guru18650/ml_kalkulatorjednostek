@@ -3,8 +3,19 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ml_kalkulatorjednostek.Dane"
              Title="Dane">
-    <VerticalStackLayout>
-        
+    <VerticalStackLayout Padding="20">
+        <Label Text="Przykład 1: Oblicz ilość danych pobranych w czasie" />
+        <Label Text="Czas (godziny)" />
+        <Entry TextColor="Black" Placeholder="1" x:Name="time1" Keyboard="Numeric"></Entry>
+        <Label Text="Przepustowość łącza (Mb/s)" />
+        <Entry TextColor="Black" Placeholder="60" x:Name="bandwidth1" Keyboard="Numeric"></Entry>
+        <Button x:Name="calc1" Text="Oblicz" Margin="0,15,0,0" Clicked="calc1_Clicked"/>
 
+        <Label Text="Przykład 2: Oblicz czas pobierania pliku" Margin="0,20,0,0" />
+        <Label Text="Wielkość pliku (GB)" />
+        <Entry TextColor="Black" Placeholder="1" x:Name="fileSize2" Keyboard="Numeric"></Entry>
+        <Label Text="Przepustowość łącza (Mb/s)" />
+        <Entry TextColor="Black" Placeholder="10" x:Name="bandwidth2" Keyboard="Numeric"></Entry>
+        <Button x:Name="calc2" Text="Oblicz" Margin="0,15,0,0" Clicked="calc2_Clicked"/>
     </VerticalStackLayout>
 </ContentPage>

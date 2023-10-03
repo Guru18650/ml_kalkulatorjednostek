@@ -2,13 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ml_kalkulatorjednostek.Pamiec"
-             Title="Pamiec"
+             Title="Pamięć"
 >
     <VerticalStackLayout Padding="20">
         <Label Text="Ilość danych"/>
-        <Entry TextColor="Black" PlaceholderColor="Black" BackgroundColor="#EEEEEE"  Placeholder="100" x:Name="count" Keyboard="Numeric"></Entry>
+        <Entry TextColor="Black" Placeholder="100" x:Name="count" Keyboard="Numeric"></Entry>
         <Label Text="Jednostka" Margin="0,15,0,0"/>
-        <Picker BackgroundColor="#EEEEEE" SelectedIndex="0" x:Name="fPick">
+        <Picker x:Name="fPick">
             <Picker.Items>
                 <x:String>Kilobajt</x:String>
                 <x:String>Megabajt</x:String>
@@ -17,7 +17,7 @@
             </Picker.Items>
         </Picker>
         <Label Text="Na" Margin="0,15,0,0"/>
-        <Picker BackgroundColor="#EEEEEE" SelectedIndex="0" x:Name="tPick">
+        <Picker SelectedIndex="0" x:Name="tPick">
             <Picker.Items>
                 <x:String>Kilobajt</x:String>
                 <x:String>Megabajt</x:String>

@@ -7,11 +7,14 @@
     Shell.FlyoutBehavior="Disabled">
 
     <TabBar>
-        <Tab Title="Pamiec" Icon="hd.png">
-            <ShellContent ContentTemplate="{DataTemplate local:Pamiec}" Route="Pamiec"/>
+        <Tab Title="Pamięć" Icon="hd.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Pamiec}"/>
         </Tab>
         <Tab Title="Dane" Icon="in.png">
-            <ShellContent ContentTemplate="{DataTemplate local:Dane}" Route="Dane"/>
+            <ShellContent ContentTemplate="{DataTemplate local:Dane}"/>
+        </Tab>
+        <Tab Title="Historia" Icon="time.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Historia}"/>
         </Tab>
     </TabBar>
 
