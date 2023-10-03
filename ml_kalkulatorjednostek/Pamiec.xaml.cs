@@ -25,7 +25,7 @@ public partial class Pamiec : ContentPage
 
             App.DodajObliczenie(obliczenie, wynikText);
 
-            DisplayAlert("Wynik", kb.ToString(), "OK");
+            DisplayAlert("Wynik", $"{cnt} {fPick.SelectedItem}ów jest równe {kb} {tPick.SelectedItem}ów", "OK");
 
         }
     }
