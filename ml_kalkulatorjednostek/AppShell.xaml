@@ -6,9 +6,13 @@
     xmlns:local="clr-namespace:ml_kalkulatorjednostek"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <Tab Title="Pamiec" Icon="hd.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Pamiec}" Route="Pamiec"/>
+        </Tab>
+        <Tab Title="Dane" Icon="in.png">
+            <ShellContent ContentTemplate="{DataTemplate local:Dane}" Route="Dane"/>
+        </Tab>
+    </TabBar>
 
 </Shell>
